@@ -6,14 +6,24 @@
     <body>
         <form>
             <div>
-            <label for="username">Username:</label>
-            <input  required minlength="2" type="text" id="username" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
             </div>
             <div>
-            <label for="password">Password:</label>
-            <input required minlength="6" type="password" id="password" name="password">
+                <label for="booking_date">Date: </label>
+                <input type="date" id="booking_date" name="booking_date" required>
             </div>
-            <input type="submit" value="Login">
+            <div>
+                <label for="no_of_guests">Number of Guests: </label>
+                <input type="number" id="no_of_guests" name="no_of_guests" required minlength="1" maxlength="8">
+            </div>
+            <div>
+                <label for ="agreement">I agree to the cancellation policy: </label>
+                <input type="checkbox" id="agreement" name="agreement" required>
+            </div>
+            <div>
+                <button type="submit">Book Now</button>
+            </div>
         </form>
         <style>
             input:focus:invalid {
